@@ -1,0 +1,72 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles for the entire page */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #2e3ab9;
+}
+
+/* Header styles */
+.header {
+    background-color: #2e3ab9;
+    color: #ebebeb;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* Headings styles */
+h1, h2, h3 {
+    font-weight: bolder;
+    color: #ebebeb;
+}
+
+/* Lists styles */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* List item styles */
+li {
+    margin-bottom: 10px;
+}
+
+/* Text content styles */
+p, figcaption, ul, ol {
+    color: #ebebeb;
+    line-height: 1.4;
+}
+
+/* Figure caption styles */
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Image styles */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+/* Content container styles */
+.content {
+    padding: 20px;
+}
