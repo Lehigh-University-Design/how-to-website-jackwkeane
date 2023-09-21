@@ -1,3 +1,8 @@
+/* Color Codes:
+   Background Color: #2e3ab9
+   Text Color: #ebebeb
+*/
+
 /* General styles for the entire page */
 body {
     padding: 5%;
@@ -8,6 +13,7 @@ body {
 
 /* Header styles */
 .header {
+    width: 100%;
     background-color: #2e3ab9;
     color: #ebebeb;
     padding: 10px 0;
@@ -17,9 +23,14 @@ body {
     text-align: center;
     font-weight: 900;
     font-size: 40px; /* Larger font size for header */
-    transform-style: flat; 
-    border: 5px;
-    border-color: #ebebeb;
+}
+
+/* Bordered div styles */
+.bordered-div {
+    width: 90%;
+    height: 10%;
+    padding: 10px; /* Optional padding to create space inside the div */
+    margin: 0 auto;
 }
 
 /* Headings styles */
@@ -27,6 +38,11 @@ h1, h2, h3 {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bolder;
     color: #ebebeb;
+}
+
+/* Smaller font size for headings */
+h1 {
+    font-size: 40px;
 }
 
 /* Smaller font size for headings */
@@ -98,9 +114,10 @@ img {
     border-radius: 25px;
 }
 
-/* Styles for the list-start class */
+/* Styles for the instruction list */
 .instruction-list {
     display: flow-root; 
     padding: 20px;
     font-size: 14px; /* Smaller font size for lists */
+    padding: 10px; /* Optional padding to create space inside the div */
 }
