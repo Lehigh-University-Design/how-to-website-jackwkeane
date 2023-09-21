@@ -3,6 +3,9 @@
    Text Color: #ebebeb
 */
 
+/* Importing Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* General styles for the entire page */
 body {
     padding: 5%;
