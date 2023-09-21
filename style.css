@@ -12,12 +12,15 @@ body {
     font-family: 'Courier New', Arial, sans-serif;
     background-color: #2e3ab9;
     font-size: 16px; /* Default font size */
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(74, 68, 192) 0%, rgb(75, 75, 177) 35%, rgb(109, 107, 193) 100%);
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 /* Header styles */
 .header {
     width: 100%;
-    background-color: #2e3ab9;
+    /* background-color: #2e3ab9; */
     color: #ebebeb;
     padding: 10px 0;
     position: sticky;
@@ -26,6 +29,7 @@ body {
     text-align: center;
     font-weight: 900;
     font-size: 40px; /* Larger font size for header */
+    transition: all 0.3s ease, transform 1s ease; /* Add transform transition with delay */
 }
 
 /* Bordered div styles */
@@ -103,6 +107,7 @@ figcaption {
     transition: transform 0.3s ease; /* Add a transition for smooth resizing */
     text-align: center; /* Center the image horizontally */
     position: relative; /* Make the container relative for absolute positioning */
+    transition: all 0.3s ease, transform 1s ease; /* Add transform transition with delay */
 }
 
 /* Apply styles to the image */
@@ -123,4 +128,18 @@ img {
     padding: 20px;
     font-size: 14px; /* Smaller font size for lists */
     padding: 10px; /* Optional padding to create space inside the div */
+    transition: all 0.3s ease, transform 1s ease; /* Add transform transition with delay */
+}
+
+/* Hover state */
+.instruction-list:hover {
+    transform: scale(1.05); /* Scale up by 10% */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Scale up by 10% */
+}
+
+.header:hover {
+    transform: scale(1.05); /* Scale up by 10% */
 }
