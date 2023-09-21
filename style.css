@@ -1,16 +1,9 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-}
-
 /* General styles for the entire page */
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 5%;
+    font-family: 'Courier New', Arial, sans-serif;
     background-color: #2e3ab9;
+    font-size: 16px; /* Default font size */
 }
 
 /* Header styles */
@@ -23,50 +16,91 @@ body {
     z-index: 100;
     text-align: center;
     font-weight: 900;
+    font-size: 40px; /* Larger font size for header */
+    transform-style: flat; 
+    border: 5px;
+    border-color: #ebebeb;
 }
 
 /* Headings styles */
 h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bolder;
     color: #ebebeb;
+}
+
+/* Smaller font size for headings */
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 /* Lists styles */
 ul, ol {
     margin-left: 20px;
+    font-size: 14px; /* Smaller font size for lists */
 }
 
 /* List item styles */
 li {
     margin-bottom: 10px;
+    font-size: 14px; /* Smaller font size for list items */
 }
 
 /* Text content styles */
 p, figcaption, ul, ol {
     color: #ebebeb;
     line-height: 1.4;
+    font-size: 16px; /* Default font size for text content */
+}
+
+/* Smaller font size for emphasized text */
+strong,
+em {
+    font-size: 16px;
 }
 
 /* Figure caption styles */
 figcaption {
+    padding: 20px;
     text-align: center;
     font-style: italic;
-}
-
-/* Image styles */
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 50%;
-    height: auto;
-    border: 1px solid #ebebeb;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
+    font-size: 14px; /* Smaller font size for captions */
+    transition: opacity 0.3s ease; /* Add a transition for smooth fading */
+    opacity: 1; /* Initially, the caption is visible */
 }
 
 /* Content container styles */
 .content {
+    padding: 5%;
+}
+
+/* Apply basic styles to the image container */
+.image-container {
+    overflow: hidden; /* Hide overflow when the image enlarges */
+    transition: transform 0.3s ease; /* Add a transition for smooth resizing */
+    text-align: center; /* Center the image horizontally */
+    position: relative; /* Make the container relative for absolute positioning */
+}
+
+/* Apply styles to the image */
+img {
+    text-align: center; /* Center the image horizontally */
+    position: relative; /* Make the container relative for absolute positioning */
+    max-width: 40%; /* Make the image responsive within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+/* Styles for the list-start class */
+.instruction-list {
+    display: flow-root; 
     padding: 20px;
+    font-size: 14px; /* Smaller font size for lists */
 }
